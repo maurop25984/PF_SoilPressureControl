@@ -1,4 +1,4 @@
-# SmartPress V2 — Firmware de control de presión hidráulica
+# SoilPress V2 — Firmware de control de presión hidráulica
 
 **English:** [Read in English](README.md)
 
@@ -9,7 +9,7 @@
 ![CAN](https://img.shields.io/badge/CAN-500%20kbit%2Fs-FF8C00)
 ![BLE](https://img.shields.io/badge/BLE-5.0-0082FC)
 
-Firmware embebido de nivel productivo para **SmartPress**, una ECU de control de
+Firmware embebido de nivel productivo para **SoilPress**, una ECU de control de
 presión agrícola que acciona electroválvulas y turbinas con control de corriente por
 lazo cerrado (PID). Lee sensores de presión y corriente, ejecuta un motor de alarmas
 en tiempo real y expone toda la máquina a través de una **red CAN** y una **app móvil
@@ -120,7 +120,7 @@ flowchart LR
 ## Estructura del repositorio
 
 ```
-FW_SmartPress_V2/
+FW_SoilPress_V2/
 ├── src/
 │   ├── main.cpp                  # app_main, creación de tareas y cableado de módulos
 │   ├── adcProcess.*              # Muestreo ADC/TLA2528 y filtrado
@@ -209,15 +209,9 @@ instancias más notificaciones de alarmas.
 
 ## Sobre el autor
 
-**Autor:** Mauro Pivetta — desarrollador de firmware embebido
-**Empresa:** Leaf Agrotronic SRL (electrónica agrícola)
-**GitHub:** [@maurop25984](https://github.com/maurop25984)
-**Email:** maurofpivetta@gmail.com
+Mauro Pivetta — Desarrollador de software embebido
 
-¿Te interesan los sistemas embebidos, el IoT industrial o el desarrollo de productos?
-Hablemos.
-
-> SmartPress es un producto de Leaf Agrotronic SRL. Este repositorio se comparte con
-> fines de portfolio y revisión técnica; contactá al autor antes de reutilizarlo con
-> fines comerciales. Los componentes de terceros (`led_strip`, driver TLA2528, `fmt`)
-> conservan sus licencias originales.
+GitHub: @maurop25984
+Email: maurofpivetta@gmail.com
+Áreas: firmware ESP32, CAN, IoT industrial, automatización y sistemas de control.
+Disponible para proyectos de desarrollo embebido y consultoría técnica.
