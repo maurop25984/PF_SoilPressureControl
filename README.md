@@ -1,4 +1,4 @@
-# SoilPress V2 — Firmware de control de presión hidráulica
+# SoilPressureControl V2 — Firmware de control de presión hidráulica
 
 **English:** [Read in English](README.md)
 
