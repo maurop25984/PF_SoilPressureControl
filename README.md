@@ -46,7 +46,7 @@ Desarrollado sobre **ESP32-C6** con **ESP-IDF 5.3**, **FreeRTOS**, C y C++.
 | Motor de alarmas | 24 alarmas: presión alta/baja/mínima, desconexión de sensor, corriente mínima/máxima y pérdida de nodo; con retardos, criticidad, sirena e indicación RGB |
 | Persistencia | Almacén clave/valor tipado en **NVS**: setpoints, tolerancias, calibración y ganancias PID |
 | CAN | TWAI a 500 kbit/s, mensajería estilo J1939 por PGN, red multinodo maestro/esclavo |
-| BLE | Servicio GATT estilo SPP con protocolo JSON consumido por la app **LeafX** |
+| BLE | Servicio GATT estilo SPP con protocolo JSON consumido por la app movil* |
 | Diagnóstico | Diccionario de señales en vivo, forzado de señales, reconocimiento de alarmas, info de equipo y versión |
 | Interfaz de estado | Dos LEDs RGB WS2812 para nivel de presión, estado de BLE y estado de alarmas |
 
@@ -56,7 +56,7 @@ Desarrollado sobre **ESP32-C6** con **ESP-IDF 5.3**, **FreeRTOS**, C y C++.
 
 ```mermaid
 flowchart LR
-    APP[App móvil LeafX] -- BLE / JSON --> BLE[Servicio GATT BLE]
+    APP[App móvil] -- BLE / JSON --> BLE[Servicio GATT BLE]
     VT[Maestro / terminal virtual] <-- CAN 500 kbit/s --> CAN[Gestor de red CAN]
     BLE --> DICT[(Diccionario de señales)]
     CAN --> DICT
