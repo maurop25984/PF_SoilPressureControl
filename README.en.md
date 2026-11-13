@@ -1,4 +1,4 @@
-# SmartPress V2 — Hydraulic Pressure Control Firmware
+# SoilPressureControl V2 — Hydraulic Pressure Control Firmware
 
 **Español:** [Leer en español](README.es.md)
 
@@ -44,7 +44,7 @@ Built on **ESP32-C6** with **ESP-IDF 5.3**, **FreeRTOS**, C and C++.
 | Alarm engine | 24 alarms: high/low/min pressure, sensor disconnect, min/max current, node loss; per-alarm delays, criticality, siren and RGB indication |
 | Persistence | Typed key/value parameter store in **NVS**: setpoints, tolerances, calibration, PID gains |
 | CAN | TWAI at 500 kbit/s, J1939-style PGN messaging, multi-node master/slave network |
-| BLE | GATT/SPP-style service with a JSON protocol consumed by the **LeafX** app |
+| BLE | GATT/SPP-style service with a JSON protocol consumed by the mobile app |
 | Diagnostics | Live signal dictionary, forced signals, alarm recognition, device info and version |
 | Status UI | Dual WS2812 RGB LEDs for pressure level, BLE state and alarm state |
 
@@ -54,7 +54,7 @@ Built on **ESP32-C6** with **ESP-IDF 5.3**, **FreeRTOS**, C and C++.
 
 ```mermaid
 flowchart LR
-    APP[LeafX mobile app] -- BLE / JSON --> BLE[BLE GATT service]
+    APP[Mobile app] -- BLE / JSON --> BLE[BLE GATT service]
     VT[Master / virtual terminal] <-- CAN 500 kbit/s --> CAN[CAN network manager]
     BLE --> DICT[(Signal dictionary)]
     CAN --> DICT
