@@ -1,6 +1,6 @@
 # SoilPressureControl V2 — Firmware de control de presión hidráulica
 
-**English:** [Read in English](README.md)
+**English:** [Read in English](README.en.md)
 
 ![ESP-IDF](https://img.shields.io/badge/ESP--IDF-5.3-E7352C)
 ![Target](https://img.shields.io/badge/target-ESP32--C6-3C6EB4)
